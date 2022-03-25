@@ -10,8 +10,9 @@ const Shop = () => {
         .then(data => setBykes(data))
     },[])
     return (
-        <div className='shop'>
-            <h1>Byke House</h1>
+        <div>
+            <h1 className='Project-title'>Byke House</h1>
+            <div className='shop-container'>
             <div className='byke-container'>
                 {
                     bykes.map(byke => <Byke
@@ -22,6 +23,7 @@ const Shop = () => {
             </div>
             <div className='cart-container'>
                 <h1>cart</h1>
+            </div>
             </div>
         </div>
     );
