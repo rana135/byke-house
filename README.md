@@ -1,6 +1,6 @@
 # Project Name:- Byke House.
 
-This project was bootstrapped with [Create React App](https://byke-house-assignment.netlify.app/).
+Netlify live server link:- [Look at the project](https://byke-house-assignment.netlify.app/).
 
 ## Available Scripts
 
