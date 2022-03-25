@@ -1,0 +1,16 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    /* grid-template-columns: repeat(4, 1fr); */
+    
+}
+.byke-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-gap: 0px;
+}
+@media screen and (max-width:1200px){
+    .byke-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,64 @@
+.byke-details{
+    width: 220px;
+    height: 350px;
+    border-radius: 8px;
+    border: 1px solid #95A0A7;
+    position: relative;
+    margin-top: 50px;
+    background-color: rgba(30, 123, 210, 0.377);
+    margin-left: 20px;
+    border: none;
+}
+.byke-details:hover{
+    transform: scale(1.1);
+   transition: ease-in-out.5s;
+   background-color: rgba(30, 123, 210, 0.514);
+   border: 1px solid;
+    box-shadow: 5px 10px #88888871;
+    border:none;
+}
+.byke-details img{
+    width: 93%;
+    height: 150px;
+    border-radius: 15px;
+    padding: 8px;
+}
+.byke-info{
+    margin: 7px;
+    margin-top: -15px;
+}
+.byke-info p{
+    margin-bottom: 7px;
+    margin-top: -3px;
+}
+.byke-name{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+}
+.btn-field{
+    width: 100%;
+    position: absolute;
+    height: 48px;
+    background-color: #282c34b4;
+    border-radius: 0px 0px 8px 8px;
+    border: none;
+    bottom: 0;
+    color:white;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.btn-field:hover{
+    background-color: #282c34d2;
+    font-size: large;
+    font-weight: 700px;
+    color:white;
+}
+.addToCut{
+    margin: 10px;
+}
