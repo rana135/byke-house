@@ -50,8 +50,7 @@
     font-size: large;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 .btn-field:hover{
     background-color: #282c34d2;

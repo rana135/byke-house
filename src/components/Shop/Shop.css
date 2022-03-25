@@ -15,7 +15,18 @@
 .cart-container{
     position: fixed;
     right: 0px;
+    background-color: #CAD5E2;
+    margin-top: 25px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-right: 15px;
+    font-family: 'Lato';
+    font-style: normal;
     margin-right: 20px;
+}
+.cart-container:hover{
+    transform: scale(1.1);
+    transition: ease-in-out.5s;
 }
 
 @media screen and (max-width:1200px){
