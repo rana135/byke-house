@@ -1,8 +1,5 @@
 # Project Name:- Byke House.
-
-Netlify live server link:- [Look at the project](https://byke-house-assignment.netlify.app/).
-
-## Available Scripts
+## [Netlify live server link](https://byke-house-assignment.netlify.app/).
 
 In the project directory, you can run:
 
