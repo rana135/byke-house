@@ -1,0 +1,13 @@
+.btn{
+    margin-bottom: 7px;
+    border-radius: 7px;
+    background-image: linear-gradient(#192a56,#40739e);
+    padding: 3px;
+    color:white;
+    text-align: center;
+    border: none;
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: ease-in-out.5s;
+}

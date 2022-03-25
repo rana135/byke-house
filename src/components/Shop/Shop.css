@@ -24,10 +24,7 @@
     font-style: normal;
     margin-right: 20px;
 }
-.cart-container:hover{
-    transform: scale(1.1);
-    transition: ease-in-out.5s;
-}
+
 
 @media screen and (max-width:1200px){
     .byke-container{

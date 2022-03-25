@@ -3,7 +3,7 @@ import './Byke.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
-const Byke = ({byke}) => {
+const Byke = ({byke, handleAddToCart}) => {
     const {picture, name, id, price} = byke;
     return (
         <div className='byke-details'>
@@ -13,7 +13,7 @@ const Byke = ({byke}) => {
                 <p><strong>Price:- </strong>{price} TK</p>
                 <p><strong>ID:- </strong>{id}</p>
             </div>
-            <button className='btn-field'>
+            <button onClick={()=>handleAddToCart(byke)} className='btn-field'>
                 <p className='addToCut'>Add to Cart</p>
                 <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
             </button>

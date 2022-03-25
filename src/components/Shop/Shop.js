@@ -11,9 +11,9 @@ const Shop = () => {
         .then(res => res.json())
         .then(data => setBykes(data))
     },[])
-    const handleAddToCart =(byke)=>{
-        console.log(byke);
-        const newCart = [...cart, byke]
+    const handleAddToCart =(bykes)=>{
+        console.log(bykes);
+        const newCart = [...cart, bykes]
         setCart(newCart);
     }
     return (
