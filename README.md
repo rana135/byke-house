@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Project Name:- Byke House.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://byke-house-assignment.netlify.app/).
 
 ## Available Scripts
 
