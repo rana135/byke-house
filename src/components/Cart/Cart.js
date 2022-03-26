@@ -10,6 +10,7 @@ const Cart = ({cart}) => {
             }
             <ReactModal></ReactModal><br></br>
             <button className='selected-btn'>CHOOSE AGAIN</button><br></br>
+            
         </div>
     );
 };
