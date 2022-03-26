@@ -4,7 +4,7 @@ import ReactModal from '../ReactModal/ReactModal';
 
 const Cart = ({cart}) => {
     return (
-        <div className='carting'>
+        <div className='cart'>
             {
                 cart.map(card => <li>{card.name}</li>)
             }
