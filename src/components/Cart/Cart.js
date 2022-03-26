@@ -9,7 +9,7 @@ const Cart = ({cart}) => {
                 cart.map(card => <li>{card.name}</li>)
             }
             <button className='selected-btn'>CHOOSE 1 FOR ME</button><br></br>
-            <ReactModal className='selected-btn btn-sm'></ReactModal>
+            <ReactModal></ReactModal>
         </div>
     );
 };
