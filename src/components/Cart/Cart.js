@@ -8,8 +8,8 @@ const Cart = ({cart}) => {
             {
                 cart.map(card => <li>{card.name}</li>)
             }
-            <button className='selected-btn'>CHOOSE 1 FOR ME</button><br></br>
-            <ReactModal></ReactModal>
+            <ReactModal></ReactModal><br></br>
+            <button className='selected-btn'>CHOOSE AGAIN</button><br></br>
         </div>
     );
 };

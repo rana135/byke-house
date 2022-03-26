@@ -4,13 +4,12 @@ import { Button, Modal } from 'react-bootstrap';
 const ReactModal = (props) => {
     console.log(props);
     const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
     return (
         <>
         <Button className='selected-btn btn btn-sm' variant="primary" onClick={handleShow}>
-          CHOOSE AGAIN
+         CHOOSE 1 FOR ME
         </Button>
   
         <Modal show={show} onHide={handleClose}>
