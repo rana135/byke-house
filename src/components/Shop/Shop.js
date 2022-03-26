@@ -13,7 +13,6 @@ const Shop = () => {
             .then(data => setBykes(data))
     }, [])
     const handleAddToCart = (byke) => {
-        console.log(bykes);
         const newCart = [...cart, byke]
         setCart(newCart);
     }

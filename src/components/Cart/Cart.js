@@ -1,24 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './Cart.css'
 import ReactModal from '../ReactModal/ReactModal';
 
-import './Cart.css'
-
 const Cart = ({cart}) => {
-    const [remove, setRemove] = useState([])
-    const result = [];
-    for(const byke of cart){
-        console.log(byke);
-        const output = byke.name;
-        result.push(output)
-    }
+    const {name,id}=cart;
     return (
-        <div>
-            
-            <p>Cart:-{result}</p>
-            <button className='btn'>CHOOSE 1 FOR ME</button><br></br>
-            <ReactModal result={result}></ReactModal>
+        <div className='carting'>
+            {
+                cart.map(card => <li>{card.name}</li>)
+            }
+            <button className='selected-btn'>CHOOSE 1 FOR ME</button><br></br>
+            <ReactModal className='selected-btn btn-sm'></ReactModal>
         </div>
     );
 };
 
 export default Cart;
+
+
+
+
+

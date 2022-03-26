@@ -9,7 +9,7 @@ const ReactModal = (props) => {
   const handleShow = () => setShow(true);
     return (
         <>
-        <Button variant="primary" onClick={handleShow}>
+        <Button className='selected-btn btn btn-sm' variant="primary" onClick={handleShow}>
           CHOOSE AGAIN
         </Button>
   
