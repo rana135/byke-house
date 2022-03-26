@@ -16,6 +16,15 @@ const Shop = () => {
         const newCart = [...cart, byke]
         setCart(newCart);
     }
+    const chooseOneFromCart = () =>{
+        let newItem = []
+        const ran = Math.floor(Math.random() * cart.length)
+        newItem.push(cart[ran]);
+        setCart(newItem)
+    }
+    const removeAllFromCart = () =>{
+        setCart([])
+    }
     return (
         <div>
             <h1 className='Project-title'>Byke House</h1>
@@ -34,6 +43,8 @@ const Shop = () => {
                     <h2>Selected Byke</h2>
                     <Cart cart={cart}
                         key={cart.id}
+                        chooseOneFromCart={chooseOneFromCart}
+                        removeAllFromCart={removeAllFromCart}
                     ></Cart>
                 </div>
             </div>
