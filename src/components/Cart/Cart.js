@@ -3,7 +3,6 @@ import './Cart.css'
 import ReactModal from '../ReactModal/ReactModal';
 
 const Cart = ({cart}) => {
-    const {name,id}=cart;
     return (
         <div className='carting'>
             {
