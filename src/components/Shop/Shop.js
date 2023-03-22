@@ -7,47 +7,81 @@ import './Shop.css'
 const Shop = () => {
     const [bykes, setBykes] = useState([])
     const [cart, setCart] = useState([])
+
     useEffect(() => {
         fetch("data.json")
             .then(res => res.json())
             .then(data => setBykes(data))
     }, [])
-    const handleAddToCart = (byke) => {
-        const newCart = [...cart, byke]
-        setCart(newCart);
+    const handleAddToCart = (product) => {
+        // const newCart = [...cart, product]
+        // setCart(newCart);
+        const exist = cart.find((x) => x.id === product.id);
+        if (exist) {
+            const newCart = cart.map((x) => x.id === product.id ?
+                { ...exist, qty: exist.qty + 1 } : x
+            );
+            setCart(newCart);
+            localStorage.setItem("cartItems", JSON.stringify(newCart));
+        }
+        else {
+            const newCart = [...cart, { ...product, qty: 1 }];
+            setCart(newCart);
+            localStorage.setItem("cartItems", JSON.stringify(newCart));
+        }
     }
-    const chooseOneFromCart = () =>{
+    const chooseOneFromCart = () => {
         let newItem = []
-        const ran = Math.floor(Math.random() * cart.length)
-        newItem.push(cart[ran]);
+        const generateNumber = Math.floor(Math.random() * cart.length)
+        newItem.push(cart[generateNumber]);
         setCart(newItem)
     }
-    const removeAllFromCart = () =>{
+    const removeAllFromCart = () => {
         setCart([])
     }
+    const remove = (product) => {
+        const exist = cart.find((x) => x.id === product?.id);
+        if (exist?.qty === 1) {
+            const remainCart = cart.filter((cart) => cart.id !== product.id)
+            setCart(remainCart);
+            localStorage.setItem("cartItems", JSON.stringify(remainCart));
+        }
+        else {
+            const remainCart = cart.map((x) => x.id === product?.id ?
+                { ...exist, qty: exist.qty - 1 } : x
+            );
+            setCart(remainCart);
+            localStorage.setItem("cartItems", JSON.stringify(remainCart));
+        }
+    }
+    useEffect(() => {
+        setCart(localStorage.getItem("cartItems") ? JSON.parse(localStorage.getItem("cartItems")) : []);
+    }, [])
     return (
         <div>
             <h1 className='Project-title'>Byke House</h1>
             <div>
-            <div className='shop-container'>
-                <div className='byke-container'>
-                    {
-                        bykes.map(byke => <Byke
-                            key={byke.id}
-                            byke={byke}
-                            handleAddToCart={handleAddToCart}
-                        ></Byke>)
-                    }
+                <div className='shop-container'>
+                    <div className='byke-container'>
+                        {
+                            bykes.map(byke => <Byke
+                                key={byke.id}
+                                byke={byke}
+                                item={cart.find((x) => x.id === byke?.id)}
+                                handleAddToCart={handleAddToCart}
+                                remove={remove}
+                            ></Byke>)
+                        }
+                    </div>
+                    <div className='cart-container'>
+                        <h2>Selected Byke</h2>
+                        <Cart cart={cart} remove={remove}></Cart>
+                        <div>
+                            <button onClick={chooseOneFromCart} className='selected-btn'>CHOOSE 1 FOR ME</button><br></br>
+                            <button onClick={removeAllFromCart} className='selected-btn'>CHOOSE AGAIN</button><br></br>
+                        </div>
+                    </div>
                 </div>
-                <div className='cart-container'>
-                    <h2>Selected Byke</h2>
-                    <Cart cart={cart}
-                        key={cart.id}
-                        chooseOneFromCart={chooseOneFromCart}
-                        removeAllFromCart={removeAllFromCart}
-                    ></Cart>
-                </div>
-            </div>
             </div>
             <div>
                 <Accordion className='ask-Qustion'>

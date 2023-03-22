@@ -2,61 +2,61 @@
     {
       "id": 1,
       "picture": "https://images.pexels.com/photos/5365733/pexels-photo-5365733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "price": 457000,
+      "price": 4570,
       "name": "Royal Enfield Bullet 350"
     },
     {
       "id": 2,
       "picture": "https://images.pexels.com/photos/7150985/pexels-photo-7150985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "price": 280000,
+      "price": 2800,
       "name": "Suzuki Gixxer SF"
     },
     {
       "id": 3,
       "picture": "https://images.pexels.com/photos/2317519/pexels-photo-2317519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "price": 450000,
+      "price": 4500,
       "name": "Yamaha YZF R15 V4"
     },
     {
       "id": 4,
       "picture": "https://images.pexels.com/photos/40904/bmw-k-1300-metallic-motorcycle-40904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "price": 750000,
+      "price": 7500,
       "name": "BMW KI300S"
     },
     {
       "id": 5,
       "picture": "https://images.pexels.com/photos/2396050/pexels-photo-2396050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "price": 199000,
+      "price": 1990,
       "name": "Lifan KPR 165R Carburetor"
     },
     {
       "id": 6,
       "picture": "https://images.pexels.com/photos/2798288/pexels-photo-2798288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "price": 280000,
+      "price": 2800,
       "name": "Yamaha FZ S V3.0 FI"
     },
     {
       "id": 7,
       "picture": "https://images.pexels.com/photos/9050897/pexels-photo-9050897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "price": 200000,
+      "price": 2000,
       "name": "Panigale V4 SP2"
     },
     {
       "id": 8,
       "picture": "https://media.istockphoto.com/photos/motorcycle-transportation-racing-vehicle-at-wall-background-picture-id520075755?s=612x612",
-      "price": 550000,
+      "price": 5500,
       "name": "Yamaha R15 V3"
     },
     {
       "id": 9,
       "picture": "https://media.istockphoto.com/photos/motorcycle-motorbike-bike-riding-rider-contemporary-concept-picture-id470017378?s=612x612",
-      "price": 220000,
+      "price": 2200,
       "name": "Fz-5"
     },
     {
       "id": 10,
       "picture": "https://cdn.pixabay.com/photo/2018/10/23/20/39/engine-3768899_960_720.jpg",
-      "price": 50000,
+      "price": 500,
       "name": "Hero honda"
     }
   ]

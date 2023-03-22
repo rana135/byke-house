@@ -10,3 +10,12 @@
     transform: scale(1.1);
     transition: ease-in-out.5s;
 }
+.image{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 30px;
+}
+.btn{
+    height: 30px;
+}
+
